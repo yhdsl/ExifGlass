@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="Popup"
+    Title="弹出窗口"
     MinWidth="350"
     d:DesignHeight="250"
     d:DesignWidth="200"
@@ -28,14 +28,14 @@
                     FontSize="18"
                     FontWeight="SemiBold"
                     Foreground="{DynamicResource SystemAccentColor}"
-                    Text="Heading" />
+                    Text="标题" />
 
                 <SelectableTextBlock
                     Name="TxtContent"
                     MaxWidth="400"
                     Margin="30,0,0,0"
                     SelectionBrush="{DynamicResource SelectionColorBrush}"
-                    Text="Content"
+                    Text="内容"
                     TextWrapping="WrapWithOverflow" />
 
             </StackPanel>
@@ -56,7 +56,7 @@
                     HorizontalContentAlignment="Center"
                     Classes="accent"
                     Click="BtnOK_Click">
-                    OK
+                    确认
                 </Button>
             </Grid>
         </Border>

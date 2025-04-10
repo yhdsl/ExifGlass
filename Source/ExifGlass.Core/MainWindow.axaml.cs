@@ -441,11 +441,11 @@ public partial class MainWindow : StyledWindow
         var defaultFilename = $"{Path.GetFileNameWithoutExtension(_exifTool.OriginalFilePath)}_{tagNameNoSpace}.jpg";
         var typeChoices = new List<FilePickerFileType>
         {
-            new("JPG file (*.jpg)")
+            new("JPG 文件 (*.jpg)")
             {
                 Patterns = ["*.jpg"],
             },
-            new("All files (*.*)")
+            new("全部文件 (*.*)")
             {
                 Patterns = ["*.*"],
             }
@@ -612,13 +612,14 @@ public partial class MainWindow : StyledWindow
 
 
             TxtError.Text = "\r\n❌ Error:\r\n";
-            if (ex.Message.Contains("Target file or working directory doesn't exist"))
+            if (ex.Message.Contains("目标文件或工作目录不存在"))
             {
                 TxtError.Text += "\"exiftool.exe\" is not installed or ExifGlass could not find the path. To resolve this issue, please open the app settings and update the \"Excutable path\".";
+                TxtError.Text += "\"exiftool.exe\" 并未安装，或者 ExifGlass 无法访问该路径。请在应用设置中更新选项 \"可执行文件路径\" 以修复该错误。";
             }
             else
             {
-                TxtError.Text += ex.Message + "\r\n\r\nℹ️ Details:\r\n" +
+                TxtError.Text += ex.Message + "\r\n\r\nℹ️ 详细信息:\r\n" +
                     ex.ToString();
             }
         }
@@ -666,7 +667,7 @@ public partial class MainWindow : StyledWindow
 
         if (isExtEmpty || defaultExt.Equals(".txt", StringComparison.InvariantCultureIgnoreCase))
         {
-            typeChoices.Add(new FilePickerFileType("Text file (*.txt)")
+            typeChoices.Add(new FilePickerFileType("文本文件 (*.txt)")
             {
                 MimeTypes = ["text/plain"],
                 Patterns = ["*.txt"],
@@ -675,7 +676,7 @@ public partial class MainWindow : StyledWindow
 
         if (isExtEmpty || defaultExt.Equals(".csv", StringComparison.InvariantCultureIgnoreCase))
         {
-            typeChoices.Add(new FilePickerFileType("CSV file (*.csv)")
+            typeChoices.Add(new FilePickerFileType("CSV 文件 (*.csv)")
             {
                 MimeTypes = ["text/csv"],
                 Patterns = ["*.csv"],
@@ -684,7 +685,7 @@ public partial class MainWindow : StyledWindow
 
         if (isExtEmpty || defaultExt.Equals(".json", StringComparison.InvariantCultureIgnoreCase))
         {
-            typeChoices.Add(new FilePickerFileType("JSON file (*.json)")
+            typeChoices.Add(new FilePickerFileType("JSON 文件 (*.json)")
             {
                 MimeTypes = ["application/json"],
                 Patterns = ["*.json"],

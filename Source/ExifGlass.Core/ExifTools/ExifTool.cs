@@ -321,7 +321,7 @@ public class ExifTool(string toolPath = "") : List<ExifTagItem>
 
         if (hasError && Count == 0)
         {
-            throw new Exception("ExifGlass encountered an error while parsing the output of ExifTool. Please ensure that the command-line arguments for ExifTool are correct.");
+            throw new Exception("ExifGlass 在解析 ExifTool 输出中遇到错误。请确定 ExifTool 的命令行参数无误。");
         }
     }
 

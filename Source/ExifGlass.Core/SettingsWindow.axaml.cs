@@ -95,7 +95,7 @@ public partial class SettingsWindow : StyledWindow
             AllowMultiple = false,
             FileTypeFilter =
             [
-                new("ExifTool's binary file")
+                new("ExifTool 二进制文件")
                 {
                     Patterns = ["*.exe"]
                 },

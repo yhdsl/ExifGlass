@@ -23,7 +23,7 @@
             <MenuItem
                 Padding="10,0"
                 FontWeight="SemiBold"
-                Header="Column Options"
+                Header="列选项"
                 IsHitTestVisible="false"
                 IsTabStop="false"
                 IsTextSearchEnabled="false" />
@@ -31,7 +31,7 @@
                 x:Name="MnuToggleColumnIndex"
                 Padding="10,0"
                 Click="MnuColumnOptions_Click"
-                Header="Index"
+                Header="索引"
                 IsChecked="{Binding Source={x:Static app:Config.ShowColumnIndex}, Mode=OneWay}">
                 <MenuItem.Icon>
                     <CheckBox IsChecked="{Binding $parent.IsChecked, Mode=OneWay}" IsHitTestVisible="false" />
@@ -41,7 +41,7 @@
                 x:Name="MnuToggleColumnTagId"
                 Padding="10,0"
                 Click="MnuColumnOptions_Click"
-                Header="Tag ID"
+                Header="标签ID"
                 IsChecked="{Binding Source={x:Static app:Config.ShowColumnTagId}, Mode=OneWay}">
                 <MenuItem.Icon>
                     <CheckBox IsChecked="{Binding $parent.IsChecked}" IsHitTestVisible="false" />
@@ -51,7 +51,7 @@
                 x:Name="MnuToggleColumnTagName"
                 Padding="10,0"
                 Click="MnuColumnOptions_Click"
-                Header="Tag Name"
+                Header="标签名称"
                 IsChecked="{Binding Source={x:Static app:Config.ShowColumnTagName}, Mode=OneWay}">
                 <MenuItem.Icon>
                     <CheckBox IsChecked="{Binding $parent.IsChecked}" IsHitTestVisible="false" />
@@ -61,7 +61,7 @@
                 x:Name="MnuToggleColumnTagValue"
                 Padding="10,0"
                 Click="MnuColumnOptions_Click"
-                Header="Value"
+                Header="标签文本"
                 IsChecked="{Binding Source={x:Static app:Config.ShowColumnTagValue}, Mode=OneWay}">
                 <MenuItem.Icon>
                     <CheckBox IsChecked="{Binding $parent.IsChecked}" IsHitTestVisible="false" />
@@ -78,13 +78,13 @@
             <MenuItem
                 Padding="10,0"
                 Click="BtnCopy_Click"
-                Header="Copy"
+                Header="复制"
                 InputGesture="Ctrl+C" />
             <MenuItem
                 x:Name="MnuExtractData"
                 Padding="10,0"
                 Click="MnuExtractData_Click"
-                Header="Extract data" />
+                Header="导出数据" />
         </ContextMenu>
     </Window.Resources>
 
@@ -179,7 +179,7 @@
                                             FontSize="13"
                                             FontWeight="SemiBold"
                                             Foreground="{DynamicResource SystemBaseMediumHighColor}">
-                                            Tag ID
+                                            标签ID
                                         </TextBlock>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.HeaderTemplate>
@@ -213,7 +213,7 @@
                                             Foreground="{DynamicResource SystemBaseMediumHighColor}"
                                             TextTrimming="CharacterEllipsis"
                                             TextWrapping="NoWrap">
-                                            Tag Name
+                                            标签名称
                                         </TextBlock>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.HeaderTemplate>
@@ -248,7 +248,7 @@
                                             Foreground="{DynamicResource SystemBaseMediumHighColor}"
                                             TextTrimming="CharacterEllipsis"
                                             TextWrapping="NoWrap">
-                                            Tag Value
+                                            标签文本
                                         </TextBlock>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.HeaderTemplate>
@@ -308,9 +308,9 @@
                     Classes="accent"
                     HotKeyManager.HotKey="Ctrl+O"
                     ToolTip.Placement="Top"
-                    ToolTip.Tip="Open file… (Ctrl+O)"
+                    ToolTip.Tip="打开文件… (Ctrl+O)"
                     ToolTip.VerticalOffset="-5">
-                    Open file…
+                    打开文件…
                 </Button>
 
 
@@ -320,36 +320,36 @@
                     Margin="10,0,0,0"
                     IsEnabled="False"
                     ToolTip.Placement="Top"
-                    ToolTip.Tip="Copy selected value (Ctrl+C)"
+                    ToolTip.Tip="复制所选文本 (Ctrl+C)"
                     ToolTip.VerticalOffset="-5">
-                    Copy selected value
+                    复制所选文本
                 </Button>
                 <DropDownButton
                     Name="BtnExport"
                     Grid.Column="2"
                     Margin="10,0,0,0"
-                    Content="Export as…"
+                    Content="另存为…"
                     
                     IsEnabled="False"
                     ToolTip.Placement="Top"
-                    ToolTip.Tip="Export as…"
+                    ToolTip.Tip="另存为…"
                     ToolTip.VerticalOffset="-5">
                     <DropDownButton.Flyout>
                         <MenuFlyout Placement="TopEdgeAlignedRight">
                             <MenuItem
                                 Name="MnuExportText"
                                 
-                                Header="Text file…"
+                                Header="文本文件…"
                                 InputGesture="Ctrl+D1" />
                             <MenuItem
                                 Name="MnuExportCsv"
                                 
-                                Header="CSV file…"
+                                Header="CSV文件…"
                                 InputGesture="Ctrl+D2" />
                             <MenuItem
                                 Name="MnuExportJson"
                                 
-                                Header="JSON file…"
+                                Header="JSON文件…"
                                 InputGesture="Ctrl+D3" />
                         </MenuFlyout>
                     </DropDownButton.Flyout>
@@ -359,33 +359,33 @@
                     Name="BtnMenu"
                     Grid.Column="3"
                     Margin="10,0,0,0"
-                    Content="Menu…"
+                    Content="菜单…"
                     
                     ToolTip.Placement="Top"
-                    ToolTip.Tip="Menu"
+                    ToolTip.Tip="菜单"
                     ToolTip.VerticalOffset="-5">
                     <DropDownButton.Flyout>
                         <MenuFlyout Placement="TopEdgeAlignedRight">
                             <MenuItem
                                 Name="MnuSettings"
                                 
-                                Header="Settings…"
+                                Header="设置…"
                                 InputGesture="Ctrl+," />
                             <MenuItem Header="-" />
                             <MenuItem
                                 Name="MnuCheckForUpdate"
                                 
-                                Header="Check for update…" />
+                                Header="检查更新…" />
                             <MenuItem
                                 Name="MnuAbout"
                                 
-                                Header="About…"
+                                Header="关于…"
                                 InputGesture="F1" />
                             <MenuItem Header="-" />
                             <MenuItem
                                 Name="MnuExit"
                                 
-                                Header="Exit"
+                                Header="退出"
                                 InputGesture="Escape" />
                         </MenuFlyout>
                     </DropDownButton.Flyout>

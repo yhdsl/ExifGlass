@@ -34,16 +34,16 @@ public partial class UpdateWindow : StyledWindow
 
         if (App.Updater.HasNewUpdate)
         {
-            TxtHeading.Text = "A new version is available!";
+            TxtHeading.Text = "新版本更新可用!";
         }
         else
         {
-            TxtHeading.Text = "You're using the latest version!";
+            TxtHeading.Text = "你已使用最新的版本!";
         }
 
-        TxtCurrentVersion.Text = "Current version: " + Config.AppVersion.ToString();
-        TxtNewVersion.Text = "Latest version: " + App.Updater.CurrentReleaseInfo?.Version.ToString();
-        TxtPublishedDate.Text = "Published date: " + App.Updater.CurrentReleaseInfo?.PublishedDate.ToString();
+        TxtCurrentVersion.Text = "当前版本: " + Config.AppVersion.ToString();
+        TxtNewVersion.Text = "最新版本: " + App.Updater.CurrentReleaseInfo?.Version.ToString();
+        TxtPublishedDate.Text = "新版本发布时间: " + App.Updater.CurrentReleaseInfo?.PublishedDate.ToString();
 
         TxtReleaseTitle.Text = App.Updater.CurrentReleaseInfo?.Title;
         TxtReleaseDescription.Text = App.Updater.CurrentReleaseInfo?.Description;
