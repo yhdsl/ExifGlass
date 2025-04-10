@@ -51,7 +51,7 @@ Please refer to [ImageGlass Docs / ImageGlass tools](https://imageglass.org/docs
 
 
 ## Build ExifGlass from source code
-- .NET 9.0 and Visual Studio 2022
+- .NET 8.0 and Visual Studio 2022
 - Add [ImageGlass.Tools](https://www.nuget.org/packages/ImageGlass.Tools) package.
 
 
