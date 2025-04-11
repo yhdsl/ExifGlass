@@ -33,12 +33,12 @@
                 <TextBlock Name="TxtNewVersion" Margin="0,0,15,0" />
                 <TextBlock Name="TxtPublishedDate" Margin="0,0,15,0" />
 
-                <Button
-                    Name="BtnExifGlassStore"
-                    Margin="0,15,0,0"
-                    Padding="0">
-                    <Svg Height="56" Path="/Assets/exifglass_store_badge.svg" />
-                </Button>
+<!--                 <Button -->
+<!--                     Name="BtnExifGlassStore" -->
+<!--                     Margin="0,15,0,0" -->
+<!--                     Padding="0"> -->
+<!--                     <Svg Height="56" Path="/Assets/exifglass_store_badge.svg" /> -->
+<!--                 </Button> -->
 
 
                 <TextBlock

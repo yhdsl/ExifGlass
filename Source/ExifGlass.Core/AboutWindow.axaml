@@ -86,12 +86,12 @@
                     </StackPanel>
 
 
-                    <Button
-                        Name="BtnExifGlassStore"
-                        Margin="0,15,0,0"
-                        Padding="0">
-                        <Svg Height="56" Path="/Assets/exifglass_store_badge.svg" />
-                    </Button>
+<!--                     <Button -->
+<!--                         Name="BtnExifGlassStore" -->
+<!--                         Margin="0,15,0,0" -->
+<!--                         Padding="0"> -->
+<!--                         <Svg Height="56" Path="/Assets/exifglass_store_badge.svg" /> -->
+<!--                     </Button> -->
 
 
                     <Expander
