@@ -29,7 +29,7 @@ public partial class UpdateWindow : StyledWindow
 
         BtnReadMore.Click += BtnReadMore_Click;
         BtnClose.Click += BtnClose_Click;
-        BtnExifGlassStore.Click += BtnExifGlassStore_Click;
+//        BtnExifGlassStore.Click += BtnExifGlassStore_Click;
 
 
         if (App.Updater.HasNewUpdate)

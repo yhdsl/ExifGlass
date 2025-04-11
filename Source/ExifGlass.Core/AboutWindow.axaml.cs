@@ -29,7 +29,7 @@ public partial class AboutWindow : StyledWindow
 
         BtnClose.Click += BtnClose_Click;
         BtnCheckForUpdate.Click += BtnCheckForUpdate_Click;
-        BtnExifGlassStore.Click += BtnExifGlassStore_Click;
+//        BtnExifGlassStore.Click += BtnExifGlassStore_Click;
 
         TblVersion.Text = Config.AppVersion.ToString();
     }
