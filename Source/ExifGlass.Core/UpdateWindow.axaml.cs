@@ -38,12 +38,12 @@ public partial class UpdateWindow : StyledWindow
         }
         else
         {
-            TxtHeading.Text = "你已使用最新的版本!";
+            TxtHeading.Text = "您已使用最新的版本!";
         }
 
         TxtCurrentVersion.Text = "当前版本: " + Config.AppVersion.ToString();
         TxtNewVersion.Text = "最新版本: " + App.Updater.CurrentReleaseInfo?.Version.ToString();
-        TxtPublishedDate.Text = "新版本发布时间: " + App.Updater.CurrentReleaseInfo?.PublishedDate.ToString();
+        TxtPublishedDate.Text = "发布时间: " + App.Updater.CurrentReleaseInfo?.PublishedDate.ToString();
 
         TxtReleaseTitle.Text = App.Updater.CurrentReleaseInfo?.Title;
         TxtReleaseDescription.Text = App.Updater.CurrentReleaseInfo?.Description;

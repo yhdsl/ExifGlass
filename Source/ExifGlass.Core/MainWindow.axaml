@@ -23,7 +23,7 @@
             <MenuItem
                 Padding="10,0"
                 FontWeight="SemiBold"
-                Header="列选项"
+                Header="列可见性选项"
                 IsHitTestVisible="false"
                 IsTabStop="false"
                 IsTextSearchEnabled="false" />
