@@ -30,4 +30,4 @@ jobs:
         with:
           name: ExifGlass
           path: |
-            .\source\source\*
+            .\source\source\ExifGlass\bin\x64\Release\*
